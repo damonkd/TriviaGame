@@ -40,10 +40,15 @@ var howling = {
     options: ["Karen" , "Chris" , "Terri" , "Marsha"],
     answer: "Terri"
     };
+var pinhead = { 
+    question: "What was the name of the puzzle box in the Hellraiser franchise?",
+    options: ["The Box of Counted Sorrows" , "The Lament Configuration" , "Temptation" , "Pandora's Box"],
+    answer: "The Lament Configuration"
+    };
 
 //add question objects to questions array
 
-var questions = [jaws, jason, freddy, mike, leatherface, howling];
+var questions = [jaws, jason, freddy, mike, leatherface, howling, pinhead];
 var questionsLeft = questions.length;
 var correct = 0;
 var notAnswered = 0;
@@ -56,7 +61,7 @@ function thirty() {
    showTime();
     myTimer = setInterval(myTimeout1, 1000) 
 }
-
+//short timer to display correct answer
 function five() {
     shortTimer = setTimeout(myTimeout2, 1000 * 4) 
 }
