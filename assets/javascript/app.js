@@ -65,8 +65,9 @@ function five() {
 //console.log(timeLeft);
  
 function myTimeout1(){
-    showTime(); 
+    
     timeLeft--;
+    showTime(); 
      
      if(timeLeft == 0){
          
@@ -129,7 +130,7 @@ function showAnswer(){
 
 
 
-// render options
+// render options to answer with
 function showOptions(){
    
     for(var i = 0 ; i < questions[questionIndex].options.length; i++){
@@ -222,7 +223,7 @@ function score(){
 
 $("#answers").on("click",".restart", function(){
 
-    $("#start").show();
+    //$("#start").show();
     timeLeft = 15;
     $("#question").text("")
     $("#answers").text("")
@@ -231,6 +232,9 @@ $("#answers").on("click",".restart", function(){
     questionsLeft = questions.length;
     correct = 0;
     notAnswered = 0;
-
+    // restarts game
+    thirty();
+    showQuestion();
+    showOptions();
 })
 })
