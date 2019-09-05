@@ -3,6 +3,7 @@ body{
     margin: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: "assets/images/spooky.jpg";
+    background-repeat: no-repeat
     color: aliceblue;
     line-height: 1.6;
 }
